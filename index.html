@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Бібліотека</h1>
+<table border="1">
+    <tr>
+        <th>Назва книги</th>
+        <th>Автор</th>
+        <th>Рейтинг</th>
+        <th>Прослухати фрагмент</th>
+    </tr>
+    <tr>
+        <td>Червоний, білий та королівський синій</td>
+        <td>Кейсі Макквістон</td>
+        <td>4.5</td>
+        <td>
+            <audio controls>
+                <source src="audio/red.mp3" type="audio/mpeg">
+                Ваш браузер не підримує відтворення цього аудіо
+            </audio>
+        </td>
+    </tr>
+    <tr>
+        <td>Вавилон. Прихована історія</td>
+        <td>Ребекка Кван</td>
+        <td>4.6</td>
+        <td>
+            <audio controls>
+                <source src="audio/babylon.mp3" type="audio/mpeg">
+                Ваш браузер не підримує відтворення цього аудіо
+            </audio>
+        </td>
+    </tr>
+</table>
+<h1>Про нашу бібліотеку</h1>
+<video controls>
+    <source src="video/library.mp4">
+    Ваш браузер не підримує відтворення цього відео
+</video>
+<h1>Додати нову книгу</h1>
+<form action="#" method="post">
+    <label for="bookTitle">Назва книги:</label>
+    <input type="text" id="bookTitle" placeholder="Назви мене"><br><br>
+
+    <label for="description">Опис:</label>
+    <textarea id="description" rows="3" cols="50" placeholder="Опиши мене"></textarea><br><br>
+
+    <label for="rating">Рейтинг (від 1 до 5):</label>
+    <input type="range" id="rating" min="1" max="5"><br><br>
+
+    <label for="cost">Вартість:</label>
+    <input type="number" id="cost"><br><br>
+
+    <label for="image">Зображення книги:</label>
+    <input type="file" id="image" name="image"><br><br>
+
+    <input type="submit" value="Додати книгу">
+</form>
+<h1>Додаткова інформація</h1>
+<blockquote>
+    <p>"Борітеся-поборете! Вам Бог помагає"</p>
+    <cite>Т. Г. Шевченко</cite>
+</blockquote>
+<p>
+    Все було написано із використанням <abbr title="Hypertext Markup Language">HTML</abbr>
+</p>
+Тег дня: <code> div </code>
+<pre>Andrii Kobryn</pre>
+</body>
+</html>
