@@ -1,0 +1,56 @@
+h1::before,
+h1::after {
+    content: "🔥";
+}
+
+p, h2 {
+    margin: 10px 0 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: orange;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: deeppink;
+}
+
+.projects-container div {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+.projects-container > div:nth-child(2) {
+    background-color: lightgray;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-right: 20px;
+}
+
+.header-div {
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+footer p:last-child {
+    font-weight: bold;
+}
