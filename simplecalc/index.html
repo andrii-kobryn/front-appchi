@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Calculator</title>
+    <script async src="script/calculator.js"></script>
+</head>
+<body>
+
+<label for="first-number"></label>
+<input id="first-number" onblur="handleBlur(event, 'firstValue')" type="number">
+
+<label for="second-number"></label>
+<input id="second-number" onblur="handleBlur(event, 'secondValue')" type="number">
+
+<label for="operation"></label>
+<select onblur="handleBlur(event, 'action')" id="operation">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="/">/</option>
+    <option value="*">*</option>
+</select>
+<button onclick="showRes()" type="submit">Розрахувати</button>
+
+</body>
+</html>
