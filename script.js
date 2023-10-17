@@ -1,22 +1,16 @@
 "use strict"
+
 document.addEventListener("DOMContentLoaded", function () {
-    const list = document.getElementById("ul1");
-    const liElements = list.getElementsByTagName("li");
+    const table = document.querySelector("table");
+    const addGrade =table.querySelectorAll(".add-grade");
 
-    for (let li of liElements) {
-        li.addEventListener("click", function () {
-            changer(li);
-        });
-        console.log(li.textContent);
-    }
+    addGrade.forEach(button => {
+        button.addEventListener("click", function () {
+            const row = button.closest("tr");
+            const gradeCell = row.querySelector(".grade");
+
+            const res = prompt("Веддіть оцінку");
+            gradeCell.textContent += res + " ";
+        })
+    })
 });
-
-function changer(li) {
-    if (li.style.textDecoration === 'none') {
-        li.style.color = 'lightgrey';
-        li.style.textDecoration = 'line-through';
-    } else {
-        li.style.color = 'black';
-        li.style.textDecoration = 'none';
-    }
-}
