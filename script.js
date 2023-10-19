@@ -21,5 +21,5 @@ console.log(...books);
 books[1] = 'Хобіт';
 console.log(...books);
 
-const hasHarry = books.find(el => el === 'Гаррі Потер');
+const hasHarry = books.find(el => el === 'Гаррі Поттер');
 console.log(hasHarry);
