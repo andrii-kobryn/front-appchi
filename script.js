@@ -1,25 +1,26 @@
-let books = [
-    'Гаррі Поттер',
-    'Відьмак'
+let tasks = [
+    'Купити хліб',
+    'Зробити щось',
+    'Піти кудись'
 ];
 
-books.push('1984');
-console.log(...books);
+console.log(tasks.length);
 
-books.sort();
-console.log(...books);
+console.log(tasks.pop());
+console.log(...tasks);
 
-books.pop();
-console.log(...books);
+tasks.unshift('Прочитати книгу');
 
-books.unshift('Гра престолів');
-console.log(...books);
+localStorage.setItem('tasks', JSON.stringify(tasks));
 
-books.shift()
-console.log(...books);
+let localArr = JSON.parse(localStorage.getItem('tasks'));
+console.log(localArr);
 
-books[1] = 'Хобіт';
-console.log(...books);
+const index = localArr.findIndex(el => el === 'Прочитати книгу');
+localArr[index] = 'Прочитати 2 книги';
 
-const hasHarry = books.find(el => el === 'Гаррі Поттер');
-console.log(hasHarry);
+localStorage.setItem('newTasks', JSON.stringify(localArr));
+
+localStorage.removeItem('newTasks');
+localStorage.removeItem('tasks');
+
