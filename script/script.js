@@ -6,9 +6,66 @@ const DEFAULT_LESSON = "Name";
 const table = document.querySelector(".main-table");
 const tableBody = table.querySelector(".main-tbody");
 const addButton = document.querySelector(".add-lesson");
+const addCacheButton = document.querySelector(".add-cache");
+const showCacheButton = document.querySelector(".show-cache");
+const cacheTable = document.querySelector(".cache-table");
+const cacheTableBody = cacheTable.querySelector(".cache-tbody");
 addButton.addEventListener("click", function () {
     addLesson(tableBody);
 });
+
+addCacheButton.addEventListener("click", function () {
+    saveTableToCache(tableBody);
+})
+
+showCacheButton.addEventListener("click", function () {
+    showCache(cacheTableBody);
+});
+
+function saveTableToCache(tbody) {
+    const lessons = [];
+
+    const rows = tbody.querySelectorAll("tr");
+
+    for (const row of rows) {
+        const cells = row.querySelectorAll("td");
+
+        const day = cells[0].textContent;
+        const duration = cells[1].textContent;
+        const lessonName = cells[2].textContent;
+
+        lessons.push({
+            day,
+            duration,
+            lessonName,
+        });
+    }
+
+    localStorage.setItem("lessons", JSON.stringify(lessons.reverse()));
+}
+
+function showCache(cachedTableBody) {
+    cachedTableBody.innerHTML = "";
+    loadCache(cachedTableBody);
+}
+
+function loadCache(cachedTableBody) {
+    const lessonsCache = localStorage.getItem("lessons");
+
+    if (lessonsCache) {
+        const lessons = JSON.parse(lessonsCache);
+        for (const lesson of lessons) {
+            const row = cachedTableBody.insertRow(0);
+            const day = row.insertCell(0);
+            const duration = row.insertCell(1);
+            const lessonName = row.insertCell(2);
+
+            day.textContent = lesson.day;
+            duration.textContent = lesson.duration;
+            lessonName.textContent = lesson.lessonName;
+        }
+    }
+}
 
 function addLesson(tableBody) {
     const newRow = tableBody.insertRow(0);
