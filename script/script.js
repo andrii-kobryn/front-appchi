@@ -20,6 +20,7 @@ addCacheButton.addEventListener("click", function () {
 
 showCacheButton.addEventListener("click", function () {
     showCache(cacheTableBody);
+    console.log(localStorage.getItem("lessons"));
 });
 
 function saveTableToCache(tbody) {
