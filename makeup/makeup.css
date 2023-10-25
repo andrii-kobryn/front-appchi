@@ -1,0 +1,44 @@
+form {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.created-at {
+    margin-top: 20px;
+}
+
+.year, .name, .price {
+    margin: 10px;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid #757575;
+}
+
+.year:focus, .name:focus, .price:focus {
+    background-color: orange;
+}
+
+.submit {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: orange;
+    width: 200px;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.submit:hover,.submit:active,.submit:focus {
+    background: darkorange;
+}
