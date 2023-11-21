@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from "react";
-import {Book} from "../model/Book";
-import BookService from "../service/BookService";
+import {Book} from "../../../model/Book";
+import BookService from "../../../service/BookService";
 import {useParams} from "react-router-dom";
-import BookWithDetailsItem from "./BookWithDetailsItem";
+import BookWithDetailsItem from "../../book-with-details-item/BookWithDetailsItem";
 
 const BookPage: React.FC = () => {
     const {bookId} = useParams();
@@ -21,7 +21,9 @@ const BookPage: React.FC = () => {
         fetchBook();
     }, [bookId]);
 
-    return (BookWithDetailsItem(book));
+    return (
+        <BookWithDetailsItem book={book}/>
+    );
 };
 
 export default BookPage;

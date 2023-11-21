@@ -1,0 +1,25 @@
+.book-list-container.css-1oqqzyl-MuiContainer-root {
+    max-width: 100% !important;
+    min-width: 90%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.book-list-head {
+    color: #FEFAE0;
+    margin-bottom: 20px;
+    padding: 16px;
+    border-bottom: 1px solid #FEFAE0;
+}
+
+.show-add-book-page-btn {
+    margin: 16px !important;
+    margin-bottom: 8px !important;
+    color: #FEFAE0 !important;
+    background-color: #BC6C25 !important;
+}
+
+.show-add-book-page-btn:hover {
+    background-color: #FEFAE0;
+    color: #BC6C25;
+}

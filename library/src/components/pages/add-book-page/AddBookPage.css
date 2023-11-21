@@ -1,0 +1,65 @@
+.css-mhc70k-MuiGrid-root {
+    padding: 8px 0;
+    margin-top: 0 !important;
+}
+
+.head {
+    color: #FEFAE0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #FEFAE0;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.text-field {
+    & .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+        color: #FEFAE0;
+    }
+
+    & label {
+        color: #FEFAE0;
+    }
+
+    & input {
+        color: #FEFAE0;
+    }
+
+    & label.Mui-focused {
+        color: #FEFAE0;
+    }
+
+    & .MuiOutlinedInput-root {
+        & fieldset {
+            border-color: #FEFAE0;
+        }
+
+        &:hover fieldset {
+            border-color: #FEFAE0;
+        }
+
+        &.Mui-focused fieldset {
+            border-color: #FEFAE0;
+        }
+
+        &:hover {
+            color: #FEFAE0;
+        }
+    }
+}
+
+.css-13i4rnv-MuiGrid-root {
+    padding-bottom: 8px;
+}
+
+.add-book-btn {
+    color: #FEFAE0 !important;
+    background-color: #BC6C25 !important;
+}
+
+.add-book-btn:hover {
+    background-color: #FEFAE0;
+    color: #BC6C25;
+}

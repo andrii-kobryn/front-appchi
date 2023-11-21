@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from "react";
-import {Book} from "../model/Book";
-import BookService from "../service/BookService";
+import {Book} from "../../../model/Book";
+import BookService from "../../../service/BookService";
 import {useNavigate} from "react-router-dom";
-import BookListContainer from "./BookListContainer";
+import BookListContainer from "../../book-list-container/BookListContainer";
+import "./BookListPage.css";
 
 const BookListPage: React.FC = () => {
     const navigate = useNavigate();
@@ -27,7 +28,7 @@ const BookListPage: React.FC = () => {
     }
 
     return (
-        BookListContainer(books, handleBookNameClick)
+        <BookListContainer books={books} handleBookNameClick={handleBookNameClick}/>
     );
 };
 

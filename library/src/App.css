@@ -1,53 +1,5 @@
-.author-name {
-    font-style: italic;
-}
-
-.book-list-container.css-1oqqzyl-MuiContainer-root {
-    max-width: 100% !important;
-    min-width: 90%;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
-
 .css-mhc70k-MuiGrid-root {
     padding: 16px;
-}
-
-.book-list-head {
-    color: #FEFAE0;
-    margin-bottom: 20px;
-    padding: 16px;
-    border-bottom: 1px solid #FEFAE0;
-}
-
-.book-list-item {
-    background-color: #FEFAE0;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    padding: 8px;
-}
-
-.book-list-item:hover {
-    background-color: #DDA15E;
-}
-
-.book-details-container > .css-mhc70k-MuiGrid-root {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.book-item {
-    background-color: #FEFAE0;
-}
-
-.book-item.css-1oqqzyl-MuiContainer-root {
-    margin-top: 16px;
-}
-
-.book-item.css-1oqqzyl-MuiContainer-root {
-    max-width: 800px;
-    min-width: 400px;
 }
 
 body {
