@@ -1,8 +1,9 @@
 import {Box, Container, Grid, Typography} from "@mui/material";
 import React from "react";
-import {Book} from "../model/Book";
+import BookWithDetailsItemProps from "../../model/BookWithDetailsItemProps";
+import "./BookWithDetailsItem.css";
 
-const BookWithDetailsItem = (book?: Book) => {
+const BookWithDetailsItem: React.FC<BookWithDetailsItemProps> = ({book}) => {
     return (
         <Container className="book-item">
             <Typography variant="h4">{book?.name}</Typography>
